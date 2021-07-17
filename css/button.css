@@ -1,0 +1,30 @@
+.button{
+  inline-size: 32px; /* Ancho */
+  block-size: 32px; /* Alto */
+  border: none;
+  background-color: transparent; /* unset, initial */
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* Pseudoclase */
+.button:active{ 
+  transform: scale(.9); /* 90% del tamaño del boton */
+}
+
+#play{
+  background-image: url('../images/play.svg');
+}
+
+#pause{
+  background-image: url('../images/pause.svg');
+
+}
+#backward{
+  background-image: url('../images/-10.svg');
+}
+
+#forward{
+  background-image: url('../images/+10.svg');
+}

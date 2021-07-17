@@ -1,0 +1,66 @@
+@import './button.css';
+
+
+body{
+  background-color: #26B4BC;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+  max-inline-size: 900px;
+  margin: auto; /* para centrar */
+}
+
+.player{
+  margin-block-start: 100px;
+  position: relative;
+}
+/* Selectores hijos */
+.player video{
+  inline-size: 100%; /* ancho */
+  aspect-ratio: 16/9; /* que mantenga la relacion de aspecto */
+  vertical-align: middle;
+  object-fit: cover; /* La imagen del vídeo se llena de manera proporcional */
+  }
+
+.player-title {
+  color: whitesmoke;
+  position: absolute;
+  inset-block-start: 0; /* Funciona como un margin */
+  inset-inline-start: 20px;
+
+}
+
+.player-actions {
+  position: absolute;
+  inset: 0; /* Similar a top, left, block, right*/
+  display: flex; /* elemento flexible */
+  justify-content: center; /* centrado horizontal */
+  align-items: center; /* centrado vertical */
+  gap: 20px;
+  /* z-index: 2; */ /* Para revertir el renderizado */
+}
+
+.player-progress {
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline: 0; /* que se expanda todo el ancho en el eje x */
+  display: flex;
+  padding: 15px;
+  /* z-index: 2; */
+}
+
+.player-progress input{
+  flex: 1; /* toma todo el ancho del contenedor padre */
+}
+
+.player-overlay{
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: .3s opacity;
+}
+/* Efecto al player-overlay - pseudoclase*/
+.player:hover .player-overlay{
+  opacity: 1;
+}
