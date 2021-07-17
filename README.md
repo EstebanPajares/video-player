@@ -1,3 +1,4 @@
 # video-player
 
-Proyecto: Reproductor de vídeo, implmentado desde un diseño en Figma.
+Proyecto: Reproductor de vídeo, implementado desde un diseño en Figma, de la plataforma: https://leonidasesteban.com/
+
