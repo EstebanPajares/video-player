@@ -9,7 +9,7 @@
 }
 
 /* Pseudoclase */
-.button:active{ 
+.button:active{
   transform: scale(.9); /* 90% del tamaño del boton */
 }
 

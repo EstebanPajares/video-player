@@ -11,16 +11,17 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.wrapper-ellipse{
+.wrapper-elipse{
   position: absolute;
   inset: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .ellipse{
-  border: 31.642px solid rgba(0, 0, 0, 0.1);
-  width: 250.62px;
-  height: 250.91px;
+  border: 32px solid rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   position: absolute;
 }
@@ -62,7 +63,14 @@ body{
   /* margin-block-start: 100px; */
   position: relative;
 }
-/* Selectores hijos */
+
+.player-overlay{
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: .3s opacity;
+}
+
 .player video{
   inline-size: 100%; /* ancho */
   aspect-ratio: 16/9; /* que mantenga la relacion de aspecto */
@@ -101,12 +109,7 @@ body{
   flex: 1; /* toma todo el ancho del contenedor padre */
 }
 
-.player-overlay{
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transition: .3s opacity;
-}
+
 /* Efecto al player-overlay - pseudoclase*/
 .player:hover .player-overlay{
   opacity: 1;
