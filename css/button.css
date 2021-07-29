@@ -1,7 +1,7 @@
 .button{
   inline-size: 32px; /* Ancho */
   block-size: 32px; /* Alto */
-  border: none;
+  border:none;
   background-color: transparent; /* unset, initial */
   background-repeat: no-repeat;
   background-position: center;
