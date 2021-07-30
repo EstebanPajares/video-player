@@ -52,7 +52,8 @@ body{
 }
 
 .wrapper{
-  max-inline-size: 900px;
+ max-inline-size: 900px;
+ /*  max-width: 900px; */
   margin: auto; /* para centrar */
   padding: 0 1.6rem;
   height: 100vh;
@@ -68,14 +69,14 @@ body{
   position: absolute;
   inset: 0;
   opacity: 0;
-  transition: .3s opacity;
+  transition: 0.3s opacity;
 }
 
 .player video{
-  inline-size: 100%; /* ancho */
-  aspect-ratio: 16/9; /* que mantenga la relacion de aspecto */
+  inline-size: 100%;
+  aspect-ratio: 16/9;
   vertical-align: middle;
-  object-fit: cover; /* La imagen del vídeo se llena de manera proporcional */
+  object-fit: cover;
   }
 
 .player-title {
@@ -84,6 +85,9 @@ body{
   position: absolute;
   inset-block-start: 0; /* Funciona como un margin */
   inset-inline-start: 20px;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: 2rem 0;
 }
 
 .player-actions {
